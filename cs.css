@@ -1,0 +1,101 @@
+.bmain{
+    background-color: aliceblue;
+}
+
+.back-button{
+    color: darkred;
+    font-size: 1.3em;
+    margin-top: 40px;
+    text-decoration: none;
+    display: inline-block;
+}
+.back-button:hover {
+    cursor: pointer;
+    color: #3d3c3c;
+
+}
+.image {
+    display: flex;
+    justify-content: space-between; 
+
+}
+
+.image-box {
+    flex: 1; 
+    margin: 8px; 
+    text-align :left;/*making the descrition left*/
+    opacity: 0.9;
+    
+}
+
+
+.image-box img {
+    max-width: 100%; 
+    height: auto; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+    transition: box-shadow 0.2s;/* the time to get to shadow*/
+    opacity: 0.9;
+    
+}
+
+.description {
+    background-color: white; 
+    padding: 30px;
+    border: 1px solid #ccc; 
+    margin-top: -5px;
+    font-size: 1.2em;
+   
+}
+
+.image-box:hover,
+.description:hover {
+    opacity: 1;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+    cursor: pointer;
+}
+
+.custom-logo {
+    width: 100px;
+    height: 25px;
+    background-color: rgb(249, 140, 7);
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: block; 
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s ;
+}
+
+.image-box:hover .custom-logo{
+    visibility:visible;
+    opacity: 1;
+}
+
+@media (max-width: 770px) {
+
+    .image-box{
+        flex-basis: calc(50% - 20px); 
+    }
+    
+    .image {
+        flex-direction: row; 
+        flex-wrap: wrap; /* makes the image to show next row */
+    }
+}
+
+
+@media (max-width: 480px){
+    .image-box{
+        width:100%;
+    }
+    .image{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+

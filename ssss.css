@@ -1,0 +1,91 @@
+.header{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.right-sec{
+    background-color: rgb(87, 100, 100);
+    width: 70px;
+}
+.left-sec{
+    background-color: rgb(118, 94, 49);
+}
+
+@media screen and (max-width: 768px){
+    h1{
+        font-size: 18px;
+    } 
+}
+
+.container{
+    display: flex;
+    
+}
+.column{
+    flex: 1; 
+    padding: 10px; 
+    width: 50%;
+    float: left;
+   
+}
+/*need help*/
+@media (max-width: 550px) {
+    .container {
+        flex-direction: column; 
+    }
+
+    .column {
+        width: 100%; 
+    }
+}
+.hi3{
+    font-size: 2em;
+}
+
+.p1{
+    font-size: 1.1em;
+    padding-left: 20px;
+}
+ 
+.p2{
+    font-size: 1.1em;
+    padding-left: 20px;
+}
+
+.p3{
+    font-size: 1.1em;
+    padding-left: 20px;
+}
+
+.main{
+    background-color: aliceblue;
+}
+.list {
+    padding-left: 50px;
+}
+
+.list li {
+    margin-bottom: 10px; 
+}
+
+.list li:hover .tooltip {
+    display: block; 
+}
+
+.tooltip {
+    display: none; 
+    color: black;
+}
+.column p {
+    padding-left: 20px; 
+}
+
+.list li span {
+    cursor: pointer;
+}
+.list li a {
+    text-decoration: none; /* Remove underlines from links */
+    color: brown;
+    cursor: pointer;
+}
